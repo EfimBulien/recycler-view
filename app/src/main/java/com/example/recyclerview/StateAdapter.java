@@ -39,9 +39,11 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.StateViewHol
             intent.putExtra("stateName", state.getName());
             intent.putExtra("stateCapital", state.getCapital());
             intent.putExtra("flagResource", state.getFlagResource());
+            intent.putExtra("stateDescription", state.getDescription()); // Передаем описание
             context.startActivity(intent);
         });
     }
+
 
 
     @Override
